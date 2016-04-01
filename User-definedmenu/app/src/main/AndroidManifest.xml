@@ -8,14 +8,22 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Toggle_datepicker_timepicker_analog_dialogclockActivity">
+        <activity android:name=".Toggle_datepicker_timepicker_analog_dialogclockActivity" />
+        <activity android:name=".YouKuMenu"></activity>
+        <activity android:name=".MainActivity">
+            <!-- 使得当前activity窗口化，但是必须要继承activity，不能继承appCompatActivity -->
+            android:theme="@android:style/Theme.Dialog"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".YouKuMenu"></activity>
+        <activity android:name=".carouselActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+        </activity>
     </application>
 
 </manifest>
